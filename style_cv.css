@@ -1,0 +1,248 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 70px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+}
+.container .left{
+    background: #033147;
+    padding-block: 100px;
+    width: 400px;
+
+}
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px  solid rgba(255, 255, 255, 0.2 )
+    
+}
+.profiletext .img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profiletext .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.profiletext h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+
+}
+.profiletext h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.container .right{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+
+}
+.contact{
+    padding-top: 40px;
+}
+.contact.lenguage{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact.lenguage .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+
+}
+.contact.lenguage .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+
+}
+.content{
+    font-size: 1.2em;
+}
+.about{
+    margin-bottom:50px;
+}
+.presentacion2{
+    text-transform: uppercase;
+    color: #033147;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.exp{
+    letter-spacing: 1px;
+    color: #003147;
+    margin-bottom: 10px;
+}
+.exp h5 {
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: #081921;
+}
+.año{
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    height: auto;
+    color: #081921;
+    margin-bottom: 10px;
+}
+.box h5{
+    text-transform: uppercase;
+    color: #081921;
+}
+.box p{
+    color: #003147;
+    height: 100%;
+    font-size: 1em;
+}
+.contact.lenguage{
+    width: 90%;
+    text-align: center;
+    color:#fff;
+    list-style: none;
+    overflow: hidden;
+}
+.nav{
+    width: 100%;
+}
+.list{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.list__item--click{
+    cursor: pointer;
+}
+.list__button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+.arrow .list__arrow{
+    transform: rotate(90deg);
+
+}
+.nav__link{
+    color: #03a9f4;
+    text-transform: uppercase;
+    width: auto;
+}
+.list__arrow{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    transition: transform .5s;
+}
+.nav__link{
+    display: block;
+    text-transform: uppercase;
+    padding: 15px 0;
+    text-decoration: none;
+}
+.nav__link--inside:hover{
+    background:#081921;
+    padding-inline: 20px;
+    width: fit-content;
+}
+.nav__link:hover{
+    border-radius: 10%;
+    background: #03a9;
+    
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #081921;
+    list-style: none;
+    transition: height 3ms;
+    height: 0;
+}
+.list__inside {
+    display: flex;
+}
+
+.list__img {
+    margin: 0 10px;
+}
+
+.nav__link--inside {
+    width: 100%;
+    text-align: left;
+    padding-inline: 20px;
+    margin-right: 10px;
+}
